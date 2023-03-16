@@ -49,12 +49,8 @@ def mapTest() -> float:
 
 
 if __name__ == "__main__":
-
     modes = cycle(["a", "b", "c"])
-
     modes_map = {"a": compute_a, "b": compute_b, "c": compute_c}
-
     print(f"If method: {ifTest()}")
-
     print(f"Map method: {mapTest()}")
 
