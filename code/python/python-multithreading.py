@@ -49,7 +49,7 @@ class pausableAppThread(Thread):
             while self.condition:
                 self.thread()
             if self.stop:
-                break
+                return
             time.sleep(0.1)
 
 def pausableApp() -> None:
